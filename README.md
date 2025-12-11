@@ -30,3 +30,6 @@ npm run serve   # http://localhost:4173
 npm run build
 npm run preview # http://localhost:4174
 ```
+## Live
+
+Демо доступно по адресу: [https://un1or.github.io/dsd-elements-ssr/public/](https://un1or.github.io/dsd-elements-ssr/public/)
