@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Рога и Копыта — Контакты</title>
+    <script type="module" src="./components/site-header.js"></script>
+    <script type="module" src="./components/site-footer.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        color: #1f2933;
+        background: #f9fafb;
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+      .card {
+        background: #fff;
+        padding: 1.25rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      }
+      .actions a {
+        display: inline-block;
+        margin-right: 0.75rem;
+        color: #0b7bff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <site-header title="Рога и Копыта">
+      <a slot="logo" href="./">Рога и Копыта</a>
+      <a slot="nav" href="./">Главная</a>
+      <a slot="nav" href="./about.html">О компании</a>
+      <a slot="nav" href="./contacts.html">Контакты</a>
+    </site-header>
+    <main>
+      <section class="card">
+        <h1>Свяжитесь с нами</h1>
+        <p>Напишите, чтобы обсудить задачу, получить оценку или предложить партнёрство.</p>
+        <div class="actions">
+          <a href="mailto:hello@rogaikopyta.example">hello@rogaikopyta.example</a>
+        </div>
+      </section>
+    </main>
+    <site-footer></site-footer>
+  </body>
+</html>
+

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Рога и Копыта — Главная</title>
+    <script type="module" src="./components/site-header.js"></script>
+    <script type="module" src="./components/site-footer.js"></script>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        color: #1f2933;
+        background: #f9fafb;
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 2.25rem;
+      }
+      h2 {
+        margin-top: 2rem;
+      }
+      ul {
+        padding-left: 1.25rem;
+      }
+      .hero {
+        margin-bottom: 1.5rem;
+      }
+      .card {
+        background: #fff;
+        padding: 1.25rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      }
+    </style>
+  </head>
+  <body>
+    <site-header title="Рога и Копыта">
+      <a slot="logo" href="./">Рога и Копыта</a>
+      <a slot="nav" href="./">Главная</a>
+      <a slot="nav" href="./about.html">О компании</a>
+      <a slot="nav" href="./contacts.html">Контакты</a>
+    </site-header>
+    <main>
+      <section class="hero card">
+        <h1>Цифровые решения под ключ</h1>
+        <p>
+          «Рога и Копыта» — команда, которая помогает бизнесу запускать продукты быстро:
+          прототипы, промо-лендинги, интеграции и лёгкие админки.
+        </p>
+      </section>
+      <section class="card">
+        <h2>Что мы делаем</h2>
+        <ul>
+          <li>Сайты и промо-страницы с быстрой отдачей</li>
+          <li>Интеграции с CRM и оплатами</li>
+          <li>Технический консалтинг и аудит</li>
+          <li>Сопровождение релизов и поддержка</li>
+        </ul>
+      </section>
+    </main>
+    <site-footer>© Рога и Копыта, 2025</site-footer>
+  </body>
+</html>
+

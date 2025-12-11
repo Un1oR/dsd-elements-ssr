@@ -1,0 +1,34 @@
+{
+  "name": "dsd-elements-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "http-server public -p 4173 --cors",
+    "build": "vite build",
+    "preview": "http-server dist -p 4174 --cors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Un1oR/dsd-elements-ssr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Un1oR/dsd-elements-ssr/issues"
+  },
+  "homepage": "https://github.com/Un1oR/dsd-elements-ssr#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "acorn": "^8.15.0",
+    "fast-glob": "^3.3.3",
+    "http-server": "^14.1.1",
+    "vite": "^7.2.7"
+  }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Рога и Копыта — О компании</title>
+    <script type="module" src="./components/site-header.js"></script>
+    <script type="module" src="./components/site-footer.js"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        color: #1f2933;
+        background: #f9fafb;
+      }
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      .card {
+        background: #fff;
+        padding: 1.25rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      }
+    </style>
+  </head>
+  <body>
+    <site-header title="Рога и Копыта">
+      <a slot="logo" href="./">Рога и Копыта</a>
+      <a slot="nav" href="./">Главная</a>
+      <a slot="nav" href="./about.html">О компании</a>
+      <a slot="nav" href="./contacts.html">Контакты</a>
+    </site-header>
+    <main>
+      <section class="card">
+        <h1>О компании</h1>
+        <p>«Рога и Копыта» — небольшая студия, которая делает быстрые и надёжные веб-решения.</p>
+        <p>Мы ценим прозрачность, сроки и понятный результат: от идеи до запуска и поддержки.</p>
+      </section>
+    </main>
+    <site-footer title="Тайтл из атрибута"></site-footer>
+  </body>
+</html>
+
