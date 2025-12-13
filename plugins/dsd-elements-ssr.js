@@ -22,10 +22,13 @@ export default function dsdElementsSSR(options = {}) {
       const descriptors = await Promise.all(componentFiles.map(scanComponent))
       renderers = await loadRenderFunctions(descriptors, this)
     },
-    transformIndexHtml(html) {
-      if (!Object.keys(renderers).length) return html
-      return renderIntoTags(html, renderers, this)
-    },
+    transformIndexHtml: {
+      order: 'pre',
+      handler(html, ctx) {
+          if (!Object.keys(renderers).length) return html;
+          return renderIntoTags(html, renderers, ctx);
+      },
+  },
   }
 }
 
